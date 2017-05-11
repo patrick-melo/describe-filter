@@ -1,0 +1,113 @@
+$Format:Last commit: %h by %aN at %cd%n%+w(76,6,9)%B$
+
+The placeholders are:
+
+'%H': commit hash ($Format:%H$)
+
+'%h': abbreviated commit hash ($Format:%h$)
+
+'%T': tree hash ($Format:%T$)
+
+'%t': abbreviated tree hash ($Format:%t$)
+
+'%P': parent hashes ($Format:%P$)
+
+'%p': abbreviated parent hashes ($Format:%p$)
+
+'%an': author name ($Format:%an$)
+
+'%aN': author name (respecting .mailmap, see git-shortlog[1] or git-blame[1]) ($Format:%aN$)
+
+'%ae': author email ($Format:%ae$)
+
+'%aE': author email (respecting .mailmap, see git-shortlog[1] or git-blame[1]) ($Format:%aE$)
+
+'%ad': author date (format respects --date= option) ($Format:%ad$)
+
+'%aD': author date, RFC2822 style ($Format:%aD$)
+
+'%ar': author date, relative ($Format:%ar$)
+
+'%at': author date, UNIX timestamp ($Format:%at$)
+
+'%ai': author date, ISO 8601-like format ($Format:%ai$)
+
+'%aI': author date, strict ISO 8601 format ($Format:%aI$)
+
+'%cn': committer name ($Format:%cn$)
+
+'%cN': committer name (respecting .mailmap, see git-shortlog[1] or git-blame[1]) ($Format:%cN$)
+
+'%ce': committer email ($Format:%ce$)
+
+'%cE': committer email (respecting .mailmap, see git-shortlog[1] or git-blame[1]) ($Format:%cE$)
+
+'%cd': committer date (format respects --date= option) ($Format:%cd$)
+
+'%cD': committer date, RFC2822 style ($Format:%cD$)
+
+'%cr': committer date, relative ($Format:%cr$)
+
+'%ct': committer date, UNIX timestamp ($Format:%ct$)
+
+'%ci': committer date, ISO 8601-like format ($Format:%ci$)
+
+'%cI': committer date, strict ISO 8601 format ($Format:%cI$)
+
+'%d': ref names, like the --decorate option of git-log[1] ($Format:%d$)
+
+'%D': ref names without the " (", ")" wrapping. ($Format:%D$)
+
+'%e': encoding ($Format:%e$)
+
+'%s': subject ($Format:%s$)
+
+'%f': sanitized subject line, suitable for a filename ($Format:%f$)
+
+'%b': body ($Format:%b$)
+
+'%B': raw body (unwrapped subject and body) ($Format:%B$)
+
+'%N': commit notes ($Format:%N$)
+
+'%GG': raw verification message from GPG for a signed commit ($Format:%GG$)
+
+'%G?': show "G" for a good (valid) signature, "B" for a bad signature, "U" for a good signature with unknown validity, "X" for a good signature that has expired, "Y" for a good signature made by an expired key, "R" for a good signature made by a revoked key, "E" if the signature cannot be checked (e.g. missing key) and "N" for no signature ($Format:%G?$)
+
+'%GS': show the name of the signer for a signed commit ($Format:%GS$)
+
+'%GK': show the key used to sign a signed commit ($Format:%GK$)
+
+'%gD': reflog selector, e.g., refs/stash@{1} or refs/stash@{2 minutes ago}; the format follows the rules described for the -g option. The portion before the @ is the refname as given on the command line (so git log -g refs/heads/master would yield refs/heads/master@{0}). ($Format:%gD$)
+
+'%gd': shortened reflog selector; same as %gD, but the refname portion is shortened for human readability (so refs/heads/master becomes just master). ($Format:%gd$)
+
+'%gn': reflog identity name ($Format:%gn$)
+
+'%gN': reflog identity name (respecting .mailmap, see git-shortlog[1] or git-blame[1]) ($Format:%gN$)
+
+'%ge': reflog identity email ($Format:%ge$)
+
+'%gE': reflog identity email (respecting .mailmap, see git-shortlog[1] or git-blame[1]) ($Format:%gE$)
+
+'%gs': reflog subject ($Format:%gs$)
+
+'%Cred': switch color to red ($Format:%Cred$)
+
+'%Cgreen': switch color to green ($Format:%Cgreen$)
+
+'%Cblue': switch color to blue ($Format:%Cblue$)
+
+'%Creset': reset color ($Format:%Creset$)
+
+'%C(…​)': color specification, as described under Values in the "CONFIGURATION FILE" section of git-config[1]; adding auto, at the beginning will emit color only when colors are enabled for log output (by color.diff, color.ui, or --color, and respecting the auto settings of the former if we are going to a terminal). auto alone (i.e. %C(auto)) will turn on auto coloring on the next placeholders until the color is switched again.
+
+'%m': left (<), right (>) or boundary (-) mark ($Format:%m$)
+
+'%n': newline ($Format:%n$)
+
+'%%': a raw '%' ($Format:%%$)
+
+'%x00': print a byte from a hex code ($Format:%00$)
+
+'%w([<w>[,<i1>[,<i2>]]])': switch line wrapping, like the -w option of git-shortlog[1]. ($Format:%w$)
