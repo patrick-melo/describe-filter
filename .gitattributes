@@ -1,2 +1,2 @@
-export-substr.txt    export-subst
-describe-filter.txt  filter=describe
+src/export-substr.txt    export-subst
+src/describe-filter.txt  filter=describe

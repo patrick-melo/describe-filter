@@ -1,5 +1,7 @@
 all:
-	git archive --prefix=describe-filter/ -o describe-filter.zip HEAD
-	unzip -o describe-filter.zip 
+	git archive --prefix=target-all/ -o target-all.zip HEAD
+	unzip -o target-all.zip 
+	git archive --prefix=target-src/ -o target-src.zip HEAD:src
+	unzip -o target-src.zip
 clean:
-	rm -fr describe-filter describe-filter.zip
+	rm -fr target describe-filter.zip
